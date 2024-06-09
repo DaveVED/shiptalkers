@@ -1,8 +1,6 @@
 import { parse } from "node-html-parser";
 import { deleteFromCache, readFromCache, writeToCache } from "./cache";
 
-
-
 async function fetchTotalContributions(name: string) {
     const cached = await readFromCache<number>(`${name}-github-total-contributions-all-time-v2`);
     if (cached) {

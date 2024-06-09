@@ -1,3 +1,6 @@
+/**
+ * Not ideal, but if used should move to `env.js` I guess.
+ */
 const GITLAB_TOKEN = process.env.GITLAB_TOKEN;
 if (!GITLAB_TOKEN) {
   throw new Error('GITLAB_TOKEN is not defined. Please set it in your environment variables.');
